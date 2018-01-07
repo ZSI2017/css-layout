@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>居中布局</title>
+    <link rel="stylesheet" href="./css/master.css">
+  </head>
+  <body>
+
+  <h1>水平居中</h1>
+    <p class="title">1. inline, inline-*  水平居中 -- text-align:center</p>
+    <nav role='navigation'>
+      <a href="#0">One</a>
+      <a href="#0">Two</a>
+      <a href="#0">Three</a>
+      <a href="#0">Four</a>
+    </nav>
+
+    <p class="title">2.block --  margin:0 auto</p>
+    <main>
+    <div class="center">
+        I'm a block level element and am centered.
+      </div>
+    </main>
+
+    <p class="title">3.多个block level element 居中 -- display:inline-block </p>
+    <main class="inline-block-center">
+        <div>
+          I'm an element that is block-like with my siblings and we're centered in a row.
+        </div>
+        <div>
+          I'm an element that is block-like with my siblings and we're centered in a row. I have more content in me than my siblings do.
+        </div>
+        <div>
+          I'm an element that is block-like with my siblings and we're centered in a row.
+        </div>
+    </main>
+
+    <p class="title">3.多个block level element 居中 ---   margin: 0 auto </p>
+    <main class="inline-block-center  block-center">
+        <div>
+          I'm an element that is block-like with my siblings and we're centered in a row.
+        </div>
+        <div>
+          I'm an element that is block-like with my siblings and we're centered in a row. I have more content in me than my siblings do.
+        </div>
+        <div>
+          I'm an element that is block-like with my siblings and we're centered in a row.
+        </div>
+    </main>
+
+<br/>
+
+<h1> 垂直居中 --  Vertical centering is a bit trickier in CSS.</h1>
+
+    <p> 1. inline   inline-*  ---padding-top padding-bottom </p>
+     <section>
+        <a href="#0">We're</a>
+        <a href="#0">Centered</a>
+        <a href="#0">Bits of</a>
+        <a href="#0">Text</a>
+     </section>
+
+     <p> 2. table-cell 利用表格的 Vertical-align 实现 垂直居中 </p>
+     <div class="center-table">
+       <p>I'm vertically centered multiple lines of text in a CSS-created table layout.</p>
+      </div>
+
+      <p>3. 利用 after 伪元素来实现 (ghost element)</p>
+
+      <div class="ghost-center">
+        <p>I'm vertically centered multiple lines of text in a container. Centered with a ghost pseudo element</p>
+      </div>
+
+      <p> 4. </p>
+
+  </body>
+</html>
