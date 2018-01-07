@@ -1,0 +1,17 @@
+
+html {
+
+  --color-text-default: green;
+}
+:root {
+
+}
+body {
+    color: red;
+}
+
+@supports((--foo: blue)) {
+    body {
+        color: var(--color-text-default);
+    }
+}
