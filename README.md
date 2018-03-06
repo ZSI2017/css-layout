@@ -7,13 +7,13 @@
    - [双飞翼布局](./双飞翼布局/)
 
    **参考链接**
-    - [In Search of the Holy Grail](In Search of the Holy Grail)
+    - [In Search of the Holy Grail](https://alistapart.com/article/holygrail)
 
 
 ## 居中布局 ##
    - [居中布局](./居中布局/)
 
-    **参考链接**
+   **参考链接**
        - [Centering in CSS:A Complete Guide](https://css-tricks.com/centering-css-complete-guide/)
 
 ## 自定义属性 ##
