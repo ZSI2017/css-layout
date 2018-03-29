@@ -32,41 +32,46 @@
       background-color: yellow;
       margin-left:-100px;
     } */
-body {
-  margin:0;
-  min-width: 550px;      /* 2x LC width + RC width */
-}
-#container {
-  padding-left: 200px;   /* LC width */
-  padding-right: 150px;  /* RC width */
-}
-#container .column {
-  position: relative;
-  float: left;
-}
-#center {
-  width: 100%;
-  background-color: #ddd
-}
-#left {
-  width: 200px;          /* LC width */
-  right: 200px;          /* LC width */
-  margin-left: -100%;
-  background-color: #108EE9;
-}
-#right {
-  width: 150px;          /* RC width */
-  margin-right: -150px;  /* RC width */
-  background-color: yellow;
-}
-#footer {
-  clear: both;
-}
-/*** IE6 Fix ***/
-* html #left {
-  left: 150px;           /* RC width */
-}
-    </style>
+      body {
+        margin:0;
+        min-width: 550px;      /* 2x LC width + RC width */
+      }
+
+      #container {
+        padding-left: 200px;   /* LC width */
+        padding-right: 150px;  /* RC width */
+      }
+
+      #container .column {
+        position: relative;
+        float: left;
+       }
+
+      #center {
+        width: 100%;
+        background-color: #ddd
+      }
+
+      #left {
+        width: 200px;          /* LC width */
+        right: 200px;          /* LC width */
+        margin-left: -100%;
+        background-color: #108EE9;
+      }
+      #right {
+        width: 150px;          /* RC width */
+        margin-right: -150px;  /* RC width */
+        background-color: yellow;
+      }
+      #footer {
+        clear: both;
+      }
+      /*** IE6 Fix ***/
+      * html #left {
+        left: 150px;           /* RC width */
+      }
+
+</style>
   </head>
   <body>
     <div id="header"></div><div id="container">
