@@ -1,6 +1,8 @@
 ## 经典圣杯布局 ##
 > 主要实现三栏布局： 中间内容自适应，左右两侧宽度固定。
 
+![三栏布局](./diagram_05.gif)
+
 **[作者原文](https://alistapart.com/article/holygrail)**
 
  **特点：**
@@ -33,44 +35,44 @@
 **CSS 样式**
 
  - 为左右两栏 留出位置:
- ```
- #container {
-     padding-left: 200px;   /* LC width */
-     padding-right: 150px;  /* RC width */
-  }
- ```
-  给最外层的`div` 设置 两侧`padding`,为后面侧边栏保留位置，同时保证中间内容不会被覆盖。
+   ```
+   #container {
+       padding-left: 200px;   /* LC width */
+       padding-right: 150px;  /* RC width */
+    }
+   ```
+    给最外层的`div` 设置 两侧`padding`,为后面侧边栏保留位置，同时保证中间内容不会被覆盖。
 
 - 三栏保存在同一行，开始会出现换行
-```
-    #container .columns {
-        float: left;
-        position: relative;
-    }
-```  
-利用`float`浮动，让三栏能够保存在一行，虽然还是会因为宽度不够，左右边栏被挤下去
+  ```
+      #container .columns {
+          float: left;
+          position: relative;
+      }
+  ```  
+  利用`float`浮动，让三栏能够保存在一行，虽然还是会因为宽度不够，左右边栏被挤下去
 
 - 左侧栏设置负边距，被拉到第一行，同时利用`right:200px`相对定位，推到最外面预留的`padding`处。
-```
-    #left {
-        width: 200px;        /* LC width */
-        margin-left: -100%;  
-        right: 200px;        /* LC width */
-    }
-```
+    ```
+        #left {
+            width: 200px;        /* LC width */
+            margin-left: -100%;  
+            right: 200px;        /* LC width */
+        }
+    ```
 - 同样右侧栏设置负边距。
-```
-  #right {
-    width: 150px;          /* RC width */
-    margin-right: -150px;  /* RC width */
-  }
-```
+    ```
+      #right {
+        width: 150px;          /* RC width */
+        margin-right: -150px;  /* RC width */
+      }
+    ```
 
 - 最后，原文中提到设置`min-width`,保证页面宽度变化时，能完全显示。
-```
-  body {
-    min-width: 550px;  /* 2x LC width + RC width */
-  }
-```
+  ```
+    body {
+      min-width: 550px;  /* 2x LC width + RC width */
+    }
+  ```
 
 [完整css 代码](./index.html)
