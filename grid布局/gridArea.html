@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>grid - areas</title>
+  <style>
+    html,body {
+      padding:0;
+      margin:0;
+      width:100%;
+      height:100%;
+    }
+    .item-a {
+      grid-area: header;
+       background-color:#108ee9;
+    }
+
+    .item-b {
+      grid-area: main;
+      background-color:yellow;
+    }
+
+    .item-c {
+      grid-area: sidebar;
+      background-color:green;
+    }
+
+    .item-d {
+      grid-area: footer;
+      background-color:#ddd;
+    }
+
+    .container {
+      width:100%;
+      height:100%;
+      box-sizing: border-box;
+      border: 1px solid black;
+      display: grid;
+      grid-template-columns: repeat(4,1fr [col-start]);
+      grid-template-rows: auto;
+      grid-template-areas: "header header header header" "main main . sidebar" "footer footer footer footer";
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+      <div class="item-a">header</div>
+      <div class="item-b">main</div>
+      <div class="item-c">sidebar</div>
+      <div class="item-d">footer</div>
+  </div>
+</body>
+
+</html>
