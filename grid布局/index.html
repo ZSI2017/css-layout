@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>grid 实现三栏布局</title>
+    <style>
+        body {
+         margin:0;
+         min-width:400px;
+       }
+       .container {
+         display:grid;
+         grid-template-columns:150px auto 150px;
+         grid-template-rows:auto;
+         grid-template-areas:"left main right";
+         box-sizing:border-box;
+         /* width:700px;
+         height:300px; */
+         border:1px solid #ddd;
+         border-radius:4px
+       }
+       #main {
+         grid-area:main;
+         background-color:#ddd;
+       }
+       #left {
+         grid-area:left;
+         background-color: yellow;
+       }
+       #right {
+         grid-area:right;
+         background-color:blue;
+       }
+
+    </style>
+  </head>
+  <body>
+     <div class="container">
+         <div id="main"><p> main</p></div>
+         <div id="left"><p> left </p></div>
+         <div id="right"><p> right </p> </div>
+     </div>
+  </body>
+</html>
