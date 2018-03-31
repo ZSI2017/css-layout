@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>利用负margin 实现两栏布局</title>
+    <style>
+      html,body{padding:0;margin:0;}
+      #mydiv1 {margin-right:-100px;width:100%;background-color:#ddd;}
+      #mydiv2 {width:100px;background-color:yellow;}
+      .columns {float:left;height:400px;}
+    </style>
+  </head>
+  <body>
+    <div id="mydiv1" class="columns">First Div</div>
+    <div id="mydiv2" class="columns">Second Div</div>
+  </body>
+</html>
